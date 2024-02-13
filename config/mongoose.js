@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(`mongodb://127.0.0.1:27017/hospital_api`);
+mongoose.connect(
+  `mongodb+srv://dbUser:<password>@atlascluster.nesbr6t.mongodb.net/?retryWrites=true&w=majority`
+);
 
 const db = mongoose.connection;
 
